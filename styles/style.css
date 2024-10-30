@@ -152,6 +152,7 @@ nav ul>li {
       font-size: 3rem;
       font-weight: 900;
       line-height: 120%;
+      margin: 0;
 }
 
 .image-texts h3,
@@ -167,13 +168,20 @@ p {
       border-radius: 50%;
       background-color: tomato;
 }
-.section-one, .section-two{
+
+.section-one,
+.section-two,
+.meet-team,
+.section-four,
+.footer-section {
       color: white;
       width: 80%;
       margin: 80px auto;
 }
-.section-one{
+
+.section-one {
       text-align: center;
+
       h3 {
             margin: 15px 0;
       }
@@ -193,7 +201,227 @@ p {
             }
       }
 }
+
 /* section two starts */
+.run {
+      padding: 30px 50px;
+      border-radius: 18px;
+      background: #222;
+      display: grid;
+      align-items: center;
+      gap: 10%;
+      grid-template-columns: repeat(2, 1fr);
+
+      .run-exercise>p {
+            margin-top: 15px;
+            margin-bottom: 30px;
+      }
+
+      .run-img img {
+            width: 100%;
+            border-radius: 18px;
+      }
+}
+
+/* section three starts */
+.bmi-calculator {
+      color: white;
+      width: 60%;
+      margin: 80px auto;
+}
+
+.section-three {
+      background: #222;
+}
+
+.section-three-child {
+      display: flex;
+      gap: 100px;
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+}
+
+.chart-table {
+      width: 70%;
+
+      h4 {
+            font-size: 1.7rem;
+            font-weight: 900;
+            line-height: 120%;
+      }
+
+      table,
+      tr,
+      th,
+      td {
+            border: 1px solid gray;
+            padding: 15px 25px;
+            text-align: start;
+
+            td {
+                  opacity: 0.5;
+            }
+      }
+
+      table {
+            border-collapse: collapse;
+      }
+}
+
+.calculator {
+      margin-bottom: 50px;
+      width: 100%;
+
+      h4 {
+            font-size: 1.7rem;
+            font-weight: 900;
+            line-height: 120%;
+            margin-bottom: 15px;
+      }
+
+      .input-forms {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 34px auto;
+
+            .last-form {
+                  grid-column: span 2;
+            }
+
+            input {
+                  padding: 20px 20px;
+                  border-radius: 8px;
+                  border: none;
+                  background: rgba(255, 255, 255, 0.10);
+            }
+      }
+
+      input::placeholder {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 137.5%;
+      }
+}
+
+/* section four start here  */
+.meet-team {
+      text-align: center;
+      margin-bottom: 50px;
+
+      h3 {
+            margin-bottom: 15px;
+      }
+}
+
+.team {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      height: 272px;
+      border-radius: 18px;
+      border-radius: 18px;
+
+      h4 {
+            margin: 0;
+            font-size: 1.125rem;
+            font-weight: 900;
+            line-height: 120%;
+      }
+}
+
+.team-one {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer1.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-two {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer2.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-three {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer3.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-four {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer4.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-five {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer5.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-six {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer6.png") lightgray 50%;
+      background-size: cover;
+}
+
+.team-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.10);
+}
+
+/* footer section starts here */
+footer {
+      background: rgba(255, 255, 255, 0.10);
+}
+
+.footer-section {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: flex-end;
+margin-bottom: 20px;
+
+}
+.footer-p {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+}
+.service {
+      h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 120%;
+      }
+}
+
+hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.10);
+      width: 80%;
+      margin: 30px auto;
+
+}
+
+.service p {
+      list-style: none;
+      color: rgba(255, 255, 255, 0.50);
+      font-size: 1.43rem;
+      font-weight: 400;
+      line-height: 120%;
+      margin-bottom: 20px;
+}
+
+.footer-brand {
+      margin-bottom: 20px;
+      color: #E6533C;
+      font-size: 4.37rem;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 120%;
+}
 
 /* responsive  styles */
 @media screen and (max-width:576px) {
@@ -209,6 +437,7 @@ p {
             flex-direction: column;
             gap: 20px;
       }
+
       .btn-second,
       .btn-primary {
             padding: 15px 25px;
@@ -253,8 +482,46 @@ p {
                   }
             }
       }
+
       .fat-tittle {
             font-size: 2rem;
       }
 
+      /* .section-two */
+      .run {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 30px 30px 80px 30px;
+      }
+
+      .run-exercise {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+      }
+
+      /* section-three */
+      .bmi-calculator {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+      }
+
+      .section-three-child {
+            flex-direction: column;
+            gap: 20px;
+
+            .chart-table {
+                  width: 100%;
+            }
+      }
+
+      /* section four */
+      .team-container {
+            grid-template-columns: repeat(1, 1fr);
+      }
+      /* footer section */
+      .footer-section{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: flex-start;
+      }
 }
