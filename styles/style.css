@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+}
+
+body {
+      background-color: black;
+}
+
+header {
+      color: white;
+}
+
+.hamburger {
+      display: none;
+}
+
+nav {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.nav-brand {
+      color: #E6533C;
+      font-size: 2.25rem;
+      font-style: italic;
+      font-weight: 800;
+}
+
+nav ul {
+      font-size: 1.2rem;
+      list-style: none;
+      display: flex;
+      border-radius: 39px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      padding: 1px;
+}
+
+nav ul>li {
+      padding: 7px 20px;
+}
+
+.nav-container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 200px;
+}
+
+.nav-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+}
+
+.nav-tittle {
+      font-size: 4.9rem;
+      font-weight: 900;
+      line-height: 120%;
+      margin: 0;
+}
+
+.nav-tittle>.shape {
+      font-size: 4.9rem;
+      font-weight: 400;
+      line-height: 120%;
+      margin: 0;
+      font-style: italic;
+}
+
+.nav-description {
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.3px;
+      opacity: 0.5;
+}
+
+.buttons {
+      display: flex;
+      gap: 20px;
+}
+
+.btn-text {
+      font-size: 1.2rem;
+      color: white;
+      font-weight: 600px;
+      line-height: 120%;
+      margin: 0;
+}
+
+.btn {
+      border-radius: 46px;
+      background: #E6533C;
+      font-weight: 600px;
+}
+
+.btn-primary {
+      background-color: tomato;
+      padding: 18px 40px;
+      border-radius: 50px;
+      border: none;
+}
+
+.btn-second {
+      padding: 18px 40px;
+      border-radius: 50px;
+      border: 1px solid white;
+      background-color: black;
+}
+
+.nav-image {
+      position: relative;
+}
+
+.image-texts,
+.image-texts-2 {
+      position: absolute;
+      gap: 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.10);
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      flex-shrink: 0;
+}
+
+.image-texts-2 {
+      top: 100px;
+      right: -50px;
+}
+
+.image-texts {
+      bottom: 10%;
+      display: flex;
+      align-items: center;
+
+      h3 {
+            font-size: 1.5rem;
+      }
+}
+
+.fat-tittle {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 120%;
+}
+
+.image-texts h3,
+p,
+.image-texts-2 h3,
+p {
+      margin: 5px 0px;
+}
+
+.ball {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: tomato;
+}
+.section-one, .section-two{
+      color: white;
+      width: 80%;
+      margin: 80px auto;
+}
+.section-one{
+      text-align: center;
+      h3 {
+            margin: 15px 0;
+      }
+
+      .habits-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+      }
+
+      .habit {
+            margin-top: 50px;
+
+            img {
+                  border-radius: 50%;
+                  margin-bottom: 30px;
+            }
+      }
+}
+/* section two starts */
+
+/* responsive  styles */
+@media screen and (max-width:576px) {
+      nav>ul {
+            display: none;
+      }
+
+      .hamburger {
+            display: block;
+      }
+
+      .nav-container {
+            flex-direction: column;
+            gap: 20px;
+      }
+      .btn-second,
+      .btn-primary {
+            padding: 15px 25px;
+      }
+
+      .descript {
+            font-size: 0.6rem;
+      }
+
+      .image-texts {
+            padding: 5px;
+      }
+
+      .image-texts h3,
+      .image-texts-2 h3 {
+            font-size: 1.3rem;
+      }
+
+      .image-texts .ball {
+            height: 30px;
+            width: 30px;
+      }
+
+      .image-texts-2 {
+            padding: 10px;
+            right: -0%;
+      }
+
+      /* header part end */
+      .section-one {
+            margin-top: 0;
+      }
+
+      .section-one {
+            .habits-container {
+                  margin-top: 40px;
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 10px;
+
+                  .habit {
+                        margin-top: 20px;
+                  }
+            }
+      }
+      .fat-tittle {
+            font-size: 2rem;
+      }
+
+}
