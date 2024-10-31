@@ -131,7 +131,6 @@ nav ul>li {
       border: 1px solid rgba(255, 255, 255, 0.10);
       background: rgba(255, 255, 255, 0.10);
       backdrop-filter: blur(10px);
-      padding: 15px;
       flex-shrink: 0;
       width: auto;
 }
@@ -142,11 +141,13 @@ nav ul>li {
       gap: 15px;
       bottom: 10%;
       left: 5%;
+      padding: 15px;
 }
 
 .image-texts-2 {
       top: 15%;
-      left: 45%;
+      left: 55%;
+      padding: 10px;
 }
 
 .ball {
@@ -507,6 +508,9 @@ hr {
       .nav-container {
             flex-direction: column;
             gap: 20px;
+      }
+      .nav-texts h1{
+            width: 80%;
       }
       .btn-second,
       .btn-primary {
