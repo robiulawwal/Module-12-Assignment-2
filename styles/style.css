@@ -346,7 +346,7 @@ p {
 
 .team-one {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../images/trainer1.png") lightgray 50%;
-      background-size: cover;
+      background-size:cover;
 }
 
 .team-two {
