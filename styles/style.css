@@ -117,38 +117,49 @@ nav ul>li {
       background-color: black;
 }
 
+/* starts here nav image  */
+
 .nav-image {
+
       position: relative;
 }
 
 .image-texts,
 .image-texts-2 {
       position: absolute;
-      gap: 15px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.10);
       background: rgba(255, 255, 255, 0.10);
       backdrop-filter: blur(10px);
       padding: 15px;
       flex-shrink: 0;
-}
-
-.image-texts-2 {
-      top: 100px;
-      right: -50px;
+      width: auto;
 }
 
 .image-texts {
-      bottom: 10%;
       display: flex;
       align-items: center;
-
-      h3 {
-            font-size: 1.5rem;
-      }
+      gap: 15px;
+      bottom: 10%;
+      left: 5%;
 }
 
+.image-texts-2 {
+      top: 15%;
+      left: 45%;
+}
+
+.ball {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #ff900e;
+}
+
+
+/* <!-- ends heree --> */
 .fat-tittle {
+      color: white;
       font-size: 3rem;
       font-weight: 900;
       line-height: 120%;
@@ -371,23 +382,86 @@ p {
       background: rgba(255, 255, 255, 0.10);
 }
 
+/* extra section */
+.our-facilities {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 120%;
+}
+
+.extra-gym-section {
+      margin-top: 100px;
+      background-color: #111111;
+      border: 3px solid #222;
+      ;
+
+}
+
+.extra-sect {
+      width: 80%;
+      margin: 0 auto 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+}
+
+.card {
+      position: relative;
+      width: 100%;
+      background: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.6) inset, -10px -10px 10px rgba(255, 255, 255, 0.2) inset;
+}
+
+.card-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+
+}
+
+.card-content {
+      padding: 30px;
+      color: #fff;
+}
+
+.card-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+}
+
+.card-content p {
+      margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+      background-color: gray;
+}
+
+
+
 /* footer section starts here */
 footer {
       background: rgba(255, 255, 255, 0.10);
 }
 
 .footer-section {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-justify-items: flex-end;
-margin-bottom: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: flex-end;
+      margin-bottom: 20px;
 
 }
+
 .footer-p {
       text-align: center;
       color: white;
       margin-bottom: 30px;
 }
+
 .service {
       h3 {
             font-size: 2rem;
@@ -422,55 +496,48 @@ hr {
       font-weight: 800;
       line-height: 120%;
 }
-
 /* responsive  styles */
 @media screen and (max-width:576px) {
       nav>ul {
             display: none;
       }
-
       .hamburger {
             display: block;
       }
-
       .nav-container {
             flex-direction: column;
             gap: 20px;
       }
-
       .btn-second,
       .btn-primary {
             padding: 15px 25px;
       }
-
       .descript {
             font-size: 0.6rem;
       }
-
-      .image-texts {
-            padding: 5px;
-      }
-
-      .image-texts h3,
-      .image-texts-2 h3 {
-            font-size: 1.3rem;
-      }
-
-      .image-texts .ball {
-            height: 30px;
-            width: 30px;
-      }
-
+      .image-texts,
       .image-texts-2 {
-            padding: 10px;
-            right: -0%;
+            position: absolute;
       }
-
+      .image-texts {
+            bottom: 10%;
+            left: 5%;
+            right: auto;
+            transform: translateX(0);
+      }
+      .image-texts-2 {
+            top: 20%;
+            right: 5%;
+            left: auto;
+            transform: translateX(0);
+      }
+      .nav-image {
+            margin-bottom: 20px;
+      }
       /* header part end */
       .section-one {
             margin-top: 0;
       }
-
       .section-one {
             .habits-container {
                   margin-top: 40px;
@@ -482,11 +549,9 @@ hr {
                   }
             }
       }
-
       .fat-tittle {
             font-size: 2rem;
       }
-
       /* .section-two */
       .run {
             grid-template-columns: repeat(1, 1fr);
@@ -498,29 +563,33 @@ hr {
             flex-direction: column;
             width: 80%;
       }
-
       /* section-three */
       .bmi-calculator {
             width: 80%;
             margin: 0 auto;
             margin-bottom: 30px;
       }
-
       .section-three-child {
             flex-direction: column;
             gap: 20px;
-
             .chart-table {
                   width: 100%;
             }
       }
-
       /* section four */
       .team-container {
             grid-template-columns: repeat(1, 1fr);
       }
+      /* extra sectton */
+      .extra-sect {
+            flex-direction: column;
+            align-items: center;
+      }
+      .card {
+            width: 90%;
+      }
       /* footer section */
-      .footer-section{
+      .footer-section {
             grid-template-columns: repeat(1, 1fr);
             justify-items: flex-start;
       }
